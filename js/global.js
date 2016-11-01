@@ -1,29 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import moment from 'moment'
+import { Router, Route, Link, browserHistory } from 'react-router'
 
-class Button extends React.Component {
-    constructor(props) {
-        super(props)
-        this.addCounter = this.addCounter.bind(this)
-        
-        this.state = {
-            counter: 0
-        }
-    }
+import Current from '../components/Current'
 
-    addCounter() {
-        var updatedCounter = this.state.counter
-        updatedCounter++
+ReactDOM.render(
 
-        this.setState({
+    <Router history={browserHistory}>
+        <Route path="/" component={Current} />
+    </Router>
 
-            counter: updatedCounter
-        })
-    }
+    , document.getElementById('tempData')
+)
 
-    render () {
-        return <button type="button" className="btn btn-default btn-block" onClick={this.addCounter}>{this.state.counter}</button>
-    }
-}
-
-ReactDOM.render(<Button />, document.getElementById('react'))
+// 858ce613aaa85a96c44c3c0950af21cc

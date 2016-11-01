@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#B6F7FD, #0197BC);
+}
+
+.headClass {
+  text-align: center;
+  color: #2486A1;
+  padding-top: 0px;
+  font-size: 36px;
+}
+
+/*.container-fluid {
+  background: linear-gradient(#B6F7FD, #0197BC);
+  background-size: cover;
+}*/
+
+.dateClass {
+  text-align: center;
+  color: #2486A1;
+  font-size: 20px;
+}
+
+.tempClass {
+  text-align: center;
+  color: #2486A1;
+  font-size: 72px;
+  padding-top: 60px;
+}
+
+.desciClass {
+  text-align: center;
+  color: #B9FAFF;
+  font-size: 40px;
+}
